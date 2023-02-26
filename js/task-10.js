@@ -21,8 +21,8 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i+=1) {
     const newBox = document.createElement('div');
 
-    newBox.style.width = `${20+amount*10}px`;
-    newBox.style.height = `${20+amount*10}px`;
+    newBox.style.width = `${20+i*10}px`;
+    newBox.style.height = `${20+i*10}px`;
     newBox.style.background = getRandomHexColor();
 
     boxArr.push(newBox);

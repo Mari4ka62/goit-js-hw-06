@@ -13,27 +13,20 @@ function onFormSubmit(event) {
     console.log(formEl);
     const email = formEl.email.value;
     console.log(email);
-  
-
-
-
-    // const formEl = event.currentTarget.elements;
-    // const email = formEl.email.value;
-    // const password = formEl.password.value;
-
-//     const formData = {
-//         email,
-//         password,
-//     };
-
-//   if (email==='' || password==='') {
-//       alert('Please, fill all form fields');
-//   } else {
-//       console.log(formData);
-
-//   }
-
-//     form.reset();
+    const password = formEl.password.value;
+    console.log(password);
     
-     
+    const formData = {
+        email,
+        password,
+    }
+    if (email==='' || password==='') {
+        alert('Please,fill all form fields!')
+    } else {
+        console.log(formData);
+    }
+    
+
+    event.currentTarget.reset();
+ 
 };

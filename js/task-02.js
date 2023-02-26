@@ -9,13 +9,15 @@ const ingredients = [
 
 const ingredientsList = document.querySelector('#ingredients');
  
-ingredients.forEach(element => {
+const ingredientElements = ingredients.map(element => {
   const ingredient = document.createElement('li');
   ingredient.textContent = element;
   ingredient.classList = 'item';
-  ingredientsList.append(ingredient);
+
+  return ingredient;
 });
  
+ingredientsList.append(...ingredientElements);
 // HTML містить порожній список ul#ingredients.
 
 // <ul id="ingredients"></ul>

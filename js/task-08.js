@@ -10,11 +10,11 @@ function onFormSubmit(event) {
     event.preventDefault();
     
     const formEl = event.currentTarget.elements;
-    console.log(formEl);
+     
     const email = formEl.email.value;
-    console.log(email);
+    
     const password = formEl.password.value;
-    console.log(password);
+    
     
     const formData = {
         email,
